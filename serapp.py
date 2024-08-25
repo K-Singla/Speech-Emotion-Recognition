@@ -86,7 +86,7 @@ def extract_feature(file_name, mfcc, chroma, mel):
 # Load the data and extract features for each sound file
 def load_data(test_size=0.2):
     x, y = [], []
-    for file in glob.glob("E:\Major-Project\Dataset\\Actor_*\\*.wav"):
+    for file in glob.glob("E:\Major_Project\Dataset\\Actor_*\\*.wav"):
         file_name = os.path.basename(file)
         emotion = emotions[file_name.split("-")[2]]
                
@@ -136,7 +136,7 @@ def trainModel():
 def record_predictAudio():
     x_predictAudio = []
     recordAudio()  # Record audio to predict
-    file = r'E:\Major-Project\Recorded-Audio.wav'  # Recorded audio filepath using raw string
+    file = r'E:\Major_Project\Recorded-Audio.wav'  # Recorded audio filepath using raw string
     featurePredictAudio = extract_feature(file, mfcc=True, chroma=True, mel=True)  # Extract features of recorded audio
     x_predictAudio.append(featurePredictAudio)
     y_predictAudio = model.predict(np.array(x_predictAudio))
@@ -164,10 +164,10 @@ engine.say("Welcome to Speech Emotion Recognition System Developed By Group 14")
 engine.runAndWait()
 
 # Load the images
-background_image = tk.PhotoImage(file="E:\Major-Project\Assests\wall.png") 
-icon_image1 = tk.PhotoImage(file="E:\Major-Project\Assests\icon1.png")
-icon_image2 = tk.PhotoImage(file="E:\Major-Project\Assests\mic1.png")
-icon_image3 = tk.PhotoImage(file="E:\Major-Project\Assests\exit3.png")
+background_image = tk.PhotoImage(file="E:\Major_Project\Assets\wall.png") 
+icon_image1 = tk.PhotoImage(file="E:\Major_Project\Assets\icon1.png")
+icon_image2 = tk.PhotoImage(file="E:\Major_Project\Assets\mic1.png")
+icon_image3 = tk.PhotoImage(file="E:\Major_Project\Assets\exit3.png")
 
 # Create a label to hold the background image
 background_label = tk.Label(root, image=background_image)
