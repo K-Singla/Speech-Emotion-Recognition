@@ -136,7 +136,7 @@ def trainModel():
 def record_predictAudio():
     x_predictAudio = []
     recordAudio()  # Record audio to predict
-    file = r'E:\Major_Project\Recorded-Audio.wav'  # Recorded audio filepath using raw string
+    file = r'Recorded-Audio.wav'  # Recorded audio filepath using raw string
     featurePredictAudio = extract_feature(file, mfcc=True, chroma=True, mel=True)  # Extract features of recorded audio
     x_predictAudio.append(featurePredictAudio)
     y_predictAudio = model.predict(np.array(x_predictAudio))
