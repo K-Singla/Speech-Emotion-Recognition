@@ -130,5 +130,5 @@ python serapp.py
   year         = {2024},
   publisher    = {GitHub},
   journal      = {GitHub repository},
-  url          = {https://github.com/K-Singla/Speech-Emotion-Recognition/tree/K's_Projects}
+  url          = {https://github.com/K-Singla/Speech-Emotion-Recognition}
 }
