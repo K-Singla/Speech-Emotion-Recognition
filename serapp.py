@@ -164,10 +164,10 @@ engine.say("Welcome to Speech Emotion Recognition System Developed By Group 14")
 engine.runAndWait()
 
 # Load the images
-background_image = tk.PhotoImage(file="E:\Major_Project\Assets\wall.png") 
-icon_image1 = tk.PhotoImage(file="E:\Major_Project\Assets\icon1.png")
-icon_image2 = tk.PhotoImage(file="E:\Major_Project\Assets\mic1.png")
-icon_image3 = tk.PhotoImage(file="E:\Major_Project\Assets\exit3.png")
+background_image = tk.PhotoImage(file="Assets/wall.png") 
+icon_image1 = tk.PhotoImage(file="Assets/icon1.png")
+icon_image2 = tk.PhotoImage(file="Assets/mic1.png")
+icon_image3 = tk.PhotoImage(file="Assets/exit3.png")
 
 # Create a label to hold the background image
 background_label = tk.Label(root, image=background_image)
